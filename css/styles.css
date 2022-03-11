@@ -1,0 +1,120 @@
+body{
+	box-sizing: border-box;
+	margin: 0;
+	display: grid;
+	place-items: center;
+	background-color:  hsl(233, 47%, 7%);
+	color: hsl(0, 0%, 100%);
+	min-height: 100vh;
+	font-family: 'Ubuntu', sans-serif;
+}
+
+img{
+	width: 100%;
+}
+
+
+.header-img{
+	border-top-left-radius: 5px; 
+	border-top-right-radius: 5px;
+	background: hsl(277, 64%, 61%);
+	opacity: 0.4;
+	object-fit: cover;
+}
+
+.card{
+	background-color: hsl(244, 38%, 16%);
+	width: 80%;
+	max-width: 800px;
+	border-radius: 5px;
+	margin: 2em auto;
+}
+
+.card-flex{
+	display: flex;
+	flex-direction: column;
+}
+
+.text-box{
+	width: 80%;
+	margin: 0 auto;
+	text-align: center;
+	padding-bottom: .5em;
+}
+
+.stats{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.list{
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+
+/*colors*/
+.main-paragraph{
+	color: hsla(0, 0%, 100%, 0.75);	
+}
+
+.stat-heading{
+	color: hsla(0, 0%, 100%, 0.6);
+}
+
+span{
+	color: hsl(277, 64%, 61%);
+}
+
+/*font*/
+h2{
+	font-size: 1.3rem;
+	margin-bottom: 0;
+}
+
+h3{
+	font-size: .9rem;
+	margin-bottom: 0;
+}
+
+.stat-heading{
+	font-size: .45rem; 
+	margin-top: .25em;
+}
+
+.main-paragraph{
+	font-size: .6rem; 
+	line-height: 1.5;
+	margin: 2em 0;
+}
+
+@media (min-width: 500px) {
+	.header-img{
+		width: 50%;
+		border-top-right-radius: 5px;
+		border-bottom-right-radius: 5px;
+		order: 2;
+
+	}
+
+	.card-flex{
+		flex-direction: row;
+	}
+
+	.text-box{
+		text-align: left;
+		padding: 1em auto;
+		width: 40%;
+	}
+
+	.stats{
+		flex-direction: row;
+		justify-content: space-between;
+		width: 80%;
+	}
+	
+
+
+}
